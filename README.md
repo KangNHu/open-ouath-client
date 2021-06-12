@@ -1,10 +1,18 @@
 # open-ouath-client
 
 #### 介绍
-{**以下是 Gitee 平台说明，您可以替换此简介**
-Gitee 是 OSCHINA 推出的基于 Git 的代码托管平台（同时支持 SVN）。专为开发者提供稳定、高效、安全的云端软件开发协作平台
-无论是个人、团队、或是企业，都能够用 Gitee 实现代码托管、项目管理、协作开发。企业项目请看 [https://gitee.com/enterprises](https://gitee.com/enterprises)}
-
+##### 一个第三方OAuth2协议的授权框架
+- 内置支持的第三方登录
+  -  giee
+  -  知乎
+  -  qq
+  -  新浪微博
+  -  微信
+  -  faceboot
+  -  cas (耶鲁大学开源SSO项目 )
+  -  google 
+- 支持用户自定义扩展第三方登录方式
+- 支持自定义第三方token和业务系统token绑定  
 #### 软件架构
 软件架构说明
 
