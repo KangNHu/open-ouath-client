@@ -24,10 +24,9 @@
 3.  xxxx
 
 #### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
+##### 项目结构
+- oauth-client-core 核心包，主要处理第Oauth授权
+- oauth-client-springboot 和spring boot集成
 
 #### 参与贡献
 

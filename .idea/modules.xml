@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/oauth-client-core/oauth-client-core.iml" filepath="$PROJECT_DIR$/oauth-client-core/oauth-client-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oauth-client-springboot/oauth-client-springboot.iml" filepath="$PROJECT_DIR$/oauth-client-springboot/oauth-client-springboot.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/open-ouath-client.iml" filepath="$PROJECT_DIR$/.idea/open-ouath-client.iml" />
     </modules>
   </component>

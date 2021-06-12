@@ -10,6 +10,7 @@
     <version>${reversion}</version>
     <modules>
         <module>oauth-client-core</module>
+        <module>oauth-client-springboot</module>
     </modules>
 
     <properties>
@@ -20,6 +21,7 @@
         <common-log3.version>3.11</common-log3.version>
         <common-collections4.version>4.4</common-collections4.version>
         <okhttp.version>4.9.1</okhttp.version>
+        <springboot.version>2.2.0.RELEASE</springboot.version>
         <!--jsr-->
         <servlet.version>2.5</servlet.version>
         <!--单元测试-->
@@ -51,6 +53,17 @@
                 <groupId>com.squareup.okhttp3</groupId>
                 <artifactId>okhttp</artifactId>
                 <version>${okhttp.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter</artifactId>
+                <version>${springboot.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-configuration-processor</artifactId>
+                <version>${springboot.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
