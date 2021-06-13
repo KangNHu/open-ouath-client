@@ -73,7 +73,7 @@ public class OAuthClientFilter implements Filter {
 		HttpServletResponse httpServletResponse = (HttpServletResponse) response;
 		try {
 			//执行oauth执行流程
-			executeOauthFlow((HttpServletRequest)request , (HttpServletResponse)response , chain);
+			executeOAuthFlow((HttpServletRequest)request , (HttpServletResponse)response , chain);
 		}catch (OAuthException e){
 			//处理登录错误
 			loginHandler.dofFailure( e ,httpServletResponse ,httpServletRequest);
@@ -86,7 +86,7 @@ public class OAuthClientFilter implements Filter {
 	 * @param response 响应上下文
 	 * @param chain 过滤链
 	 */
-	private void executeOauthFlow(HttpServletRequest request, HttpServletResponse response, FilterChain chain) throws IOException, ServletException {
+	private void executeOAuthFlow(HttpServletRequest request, HttpServletResponse response, FilterChain chain) throws IOException, ServletException {
 		String controlPath = PathUtils.getControlPath(request);
 		switch (controlPath){
 			case LOGIN_PATH:

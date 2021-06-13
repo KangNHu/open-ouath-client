@@ -1,9 +1,11 @@
 package org.codingeasy.oauth.client.utils;
 
 
+import org.codingeasy.oauth.client.OAuthProperties;
 import org.codingeasy.oauth.client.handler.*;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -11,6 +13,37 @@ import java.util.List;
 * @author : KangNing Hu
 */
 public class OAuthConfigUtils {
+
+	private static final String CALLBACK_URL = "callback_url";
+
+
+	/**
+	 * 获取回调url
+	 * @param oAuthProperties oauth 配置对象
+	 * @return 返回回调url 如果为空则返回null
+	 */
+	public static String getCallbackUrl(OAuthProperties oAuthProperties){
+		HashMap<String, String> extend = oAuthProperties.getExtend();
+		if (extend == null){
+			return null;
+		}
+		return extend.get(CALLBACK_URL);
+	}
+
+
+	/**
+	 * 设置回调url
+	 * @param oAuthProperties oauth 配置对象
+	 * @param callbackUrl 回调url
+	 */
+	public static void setCallbackUrl(OAuthProperties oAuthProperties , String callbackUrl){
+		HashMap<String, String> extend = oAuthProperties.getExtend();
+		if (extend == null){
+			extend = new HashMap<>();
+			oAuthProperties.setExtend(extend);
+		}
+		extend.put(CALLBACK_URL , callbackUrl);
+	}
 
 	/**
 	 * 获取默认的授权处理器

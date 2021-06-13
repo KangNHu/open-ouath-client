@@ -6,11 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="oauth-client-springboot" />
+        <module name="oauth-client-example" />
         <module name="oauth-client-core" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="oauth-client-core" target="1.8" />
+      <module name="oauth-client-example" target="1.8" />
+      <module name="oauth-client-springboot" target="1.8" />
       <module name="open-ouath-client" target="1.8" />
     </bytecodeTargetLevel>
   </component>

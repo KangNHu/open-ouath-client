@@ -17,7 +17,7 @@ public class WeiboOAuthClientHandler implements OAuthClientHandler {
 	}
 
 	@Override
-	public OAuthToken createToken(OAuthProperties properties, String code, String state) {
+	public OAuthToken createToken(OAuthProperties properties, String code) {
 		return null;
 	}
 }

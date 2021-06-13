@@ -11,6 +11,7 @@
     <modules>
         <module>oauth-client-core</module>
         <module>oauth-client-springboot</module>
+        <module>oauth-client-example</module>
     </modules>
 
     <properties>
@@ -63,6 +64,11 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-configuration-processor</artifactId>
+                <version>${springboot.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
                 <version>${springboot.version}</version>
             </dependency>
         </dependencies>

@@ -1,5 +1,8 @@
 package org.codingeasy.oauth.client;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
 * oauth授权配置类  
 * @author : KangNing Hu
@@ -15,7 +18,7 @@ public class OAuthProperties implements Cloneable{
 	/**
 	 * 是否开启跨域站点token
 	 */
-	private boolean enableXsrfToken;
+	private boolean enableXsrfToken = true;
 
 	/**
 	 * 第三方授权url
@@ -42,10 +45,25 @@ public class OAuthProperties implements Cloneable{
 	 */
 	private String scope;
 
+	/**
+	 * 扩展参数
+	 */
+	private HashMap<String,String> extend = new HashMap<>();
 
 	@Override
 	protected Object clone() throws CloneNotSupportedException {
-		return super.clone();
+		OAuthProperties clone = (OAuthProperties) super.clone();
+		clone.setExtend((HashMap<String, String>) extend.clone());
+		return clone;
+	}
+
+
+	public HashMap<String, String> getExtend() {
+		return extend;
+	}
+
+	public void setExtend(HashMap<String, String> extend) {
+		this.extend = extend;
 	}
 
 	public String getName() {
