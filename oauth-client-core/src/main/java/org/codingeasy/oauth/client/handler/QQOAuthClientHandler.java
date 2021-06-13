@@ -3,8 +3,6 @@ package org.codingeasy.oauth.client.handler;
 import org.apache.commons.lang3.StringUtils;
 import org.codingeasy.oauth.client.OAuthProperties;
 import org.codingeasy.oauth.client.model.OAuthToken;
-import org.codingeasy.oauth.client.utils.OAuthConfigUtils;
-import org.codingeasy.oauth.client.utils.OKHttpUtils;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
@@ -60,6 +58,7 @@ public class QQOAuthClientHandler implements OAuthClientHandler{
 	@Override
 	public OAuthToken createToken(OAuthProperties properties, String code) {
 		String text = sendAccessTokenFormRequest(properties, code);
+
 		return null;
 	}
 }

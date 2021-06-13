@@ -69,6 +69,7 @@ public class OAuthConfigUtils {
 		oAuthClientHandlers.add(new FacebookOAuthClientHandler());
 		oAuthClientHandlers.add(new CasOAuthClientHandler());
 		oAuthClientHandlers.add(new GoogleOAuthClientHandler());
+		oAuthClientHandlers.add(new GithubOAuthClientHandler());
 		return oAuthClientHandlers;
 	}
 
