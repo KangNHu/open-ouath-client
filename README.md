@@ -8,7 +8,7 @@
   -  qq
   -  新浪微博
   -  微信
-  -  faceboot
+  -  facebook
   -  cas (耶鲁大学开源SSO项目 )
   -  google 
 - 支持用户自定义扩展第三方登录方式
