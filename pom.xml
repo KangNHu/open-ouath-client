@@ -23,6 +23,7 @@
         <common-collections4.version>4.4</common-collections4.version>
         <okhttp.version>4.9.1</okhttp.version>
         <springboot.version>2.2.0.RELEASE</springboot.version>
+        <jackson.version>2.9.6</jackson.version>
         <!--jsr-->
         <servlet.version>2.5</servlet.version>
         <!--单元测试-->
@@ -70,6 +71,23 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-web</artifactId>
                 <version>${springboot.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-core</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-annotations</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>${jackson.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

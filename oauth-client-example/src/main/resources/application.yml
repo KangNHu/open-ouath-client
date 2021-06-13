@@ -13,3 +13,9 @@ open:
         access-token-url: https://graph.qq.com/oauth2.0/token
         client-id: 1111943830
         client-secret: xrYGXZAOv1m7XRu7
+      properties[1]
+        name: wechat
+        authorize-url: https://graph.qq.com/oauth2.0/authorize
+        access-token-url: https://graph.qq.com/oauth2.0/token
+        client-id: 1111943830
+        client-secret: xrYGXZAOv1m7XRu7
