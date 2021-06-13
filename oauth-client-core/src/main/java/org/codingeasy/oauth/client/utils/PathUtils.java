@@ -40,11 +40,10 @@ public class PathUtils {
 	 * @return 返回 http path 的前缀
 	 */
 	public static String getPathPrefix(HttpServletRequest request){
-		String requestURI = request.getRequestURI();
-		String prefixPath = request.getContextPath();
-		// 映射路径（子路径）
-		String rootPath = StringUtils.replace(prefixPath, "//", "/");
-		return rootPath + StringUtils.substringBefore(requestURI,rootPath);
+		String url = request.getRequestURL().toString();
+		String rootPath = request.getContextPath();
+		rootPath = StringUtils.replace(rootPath, "//", "/");
+		return StringUtils.substringBefore(url, rootPath) + rootPath;
 	}
 
 }

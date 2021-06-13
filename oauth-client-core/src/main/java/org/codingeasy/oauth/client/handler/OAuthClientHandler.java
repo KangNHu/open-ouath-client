@@ -2,8 +2,12 @@ package org.codingeasy.oauth.client.handler;
 
 import org.codingeasy.oauth.client.OAuthProperties;
 import org.codingeasy.oauth.client.model.OAuthToken;
+import org.codingeasy.oauth.client.utils.OAuthConfigUtils;
+import org.codingeasy.oauth.client.utils.OKHttpUtils;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.HashMap;
+import java.util.Map;
 
 
 /**
@@ -11,6 +15,9 @@ import javax.servlet.http.HttpServletRequest;
 * @author : KangNing Hu
 */
 public interface OAuthClientHandler {
+
+	//通用的token url 模版
+	String TOKEN_URL_TEMPLATE = "%s?grant_type=authorization_code&client_id=%s&client_secret=%s&code=%s&redirect_uri=%s";
 
 	/**
 	 * 获取授权名称
@@ -44,5 +51,50 @@ public interface OAuthClientHandler {
 	 */
 	default boolean isCancelAuthorize(HttpServletRequest request){
 		return false;
+	}
+
+	/**
+	 * 发送获取token get 请求
+	 * @param properties oauth 配置对象
+	 * @param code 授权码
+	 * @return 响应数据
+	 */
+	default String sendAccessTokenGetRequest(OAuthProperties properties , String code){
+		String tokenUrl = String.format(TOKEN_URL_TEMPLATE,
+				properties.getClientId(),
+				properties.getClientSecret(),
+				code,
+				OAuthConfigUtils.getCallbackUrl(properties)
+		);
+		return OKHttpUtils.get(tokenUrl);
+	}
+
+	/**
+	 * 发送获取token form 请求
+	 * @param properties oauth 配置对象
+	 * @param code 授权码
+	 * @return 响应数据
+	 */
+	default String sendAccessTokenFormRequest(OAuthProperties properties , String code){
+		return sendAccessTokenFormRequest(properties, code , null);
+	}
+
+	/**
+	 * 发送获取token form 请求
+	 * @param properties oauth 配置对象
+	 * @param code 授权码
+	 * @param body 额外的请求参数
+	 * @return 响应数据
+	 */
+	default String sendAccessTokenFormRequest(OAuthProperties properties , String code , Map<String , Object> body){
+		if (body == null) {
+			body = new HashMap<>();
+		}
+		body.put("grant_type" ,"authorization_code" );
+		body.put("client_id" , properties.getClientId());
+		body.put("client_secret" , properties.getClientSecret());
+		body.put("code" , code);
+		body.put("redirect_uri" ,OAuthConfigUtils.getCallbackUrl(properties) );
+		return OKHttpUtils.form(properties.getAccessTokenUrl(), body);
 	}
 }

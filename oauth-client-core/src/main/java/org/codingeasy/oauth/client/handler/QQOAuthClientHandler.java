@@ -20,7 +20,6 @@ public class QQOAuthClientHandler implements OAuthClientHandler{
 	private final static String PARAMETER_DISPLAY = "display";
 	private final static String PARAMETER_USERCANCEL = "usercancel";
 
-	private final static String TOKEN_URL_TEMPLATE = "%s?grant_type=authorization_code&client_id=%s&client_secret=%s&code=%s&redirect_uri=%s";
 
 
 	@Override
@@ -60,14 +59,7 @@ public class QQOAuthClientHandler implements OAuthClientHandler{
 
 	@Override
 	public OAuthToken createToken(OAuthProperties properties, String code) {
-		String tokenUrl = String.format(TOKEN_URL_TEMPLATE,
-				properties.getClientId(),
-				properties.getClientSecret(),
-				code,
-				OAuthConfigUtils.getCallbackUrl(properties)
-		);
-		String body = OKHttpUtils.get(tokenUrl);
-
+		String text = sendAccessTokenFormRequest(properties, code);
 		return null;
 	}
 }

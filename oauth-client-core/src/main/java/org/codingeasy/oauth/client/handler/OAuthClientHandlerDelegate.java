@@ -4,10 +4,7 @@ import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.codingeasy.oauth.client.OAuthProperties;
 import org.codingeasy.oauth.client.XsrfTokenGenerator;
-import org.codingeasy.oauth.client.exception.CancelAuthorizeException;
-import org.codingeasy.oauth.client.exception.IllegitimateStateException;
-import org.codingeasy.oauth.client.exception.RedirectException;
-import org.codingeasy.oauth.client.exception.UnknownOAuthNameException;
+import org.codingeasy.oauth.client.exception.*;
 import org.codingeasy.oauth.client.model.OAuthToken;
 import org.codingeasy.oauth.client.utils.OAuthConfigUtils;
 import org.codingeasy.oauth.client.utils.PathUtils;
@@ -16,7 +13,9 @@ import org.jetbrains.annotations.NotNull;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import java.io.UnsupportedEncodingException;
 import java.lang.reflect.Array;
+import java.net.URLEncoder;
 import java.util.*;
 
 import static org.codingeasy.oauth.client.OAuthClientFilter.CALL_PATH;
@@ -126,10 +125,15 @@ public class OAuthClientHandlerDelegate {
 		if (!StringUtils.isEmpty(oAuthProperties.getScope())){
 			authorizeUrlTemplate = authorizeUrlTemplate + "&scope=%s";
 		}
-		String url = fillAuthorizeUrlTemplate(authorizeUrlTemplate , oAuthProperties , request);
+		String url;
 		try {
+			url = fillAuthorizeUrlTemplate(authorizeUrlTemplate , oAuthProperties , request);
 			//对授权之前处理
 			url = oAuthClientHandler.postAfterAuthorizeProcessor(url, oAuthProperties);
+		}catch (Exception e){
+			throw new OAuthException(e);
+		}
+		try {
 			//重定向到第三方授权
 			response.sendRedirect(url);
 		}catch (Exception e){
@@ -143,7 +147,7 @@ public class OAuthClientHandlerDelegate {
 	 * @param oAuthProperties oauth 配置
 	 * @return
 	 */
-	private String fillAuthorizeUrlTemplate(String authorizeUrlTemplate , OAuthProperties oAuthProperties,HttpServletRequest request) {
+	private String fillAuthorizeUrlTemplate(String authorizeUrlTemplate , OAuthProperties oAuthProperties,HttpServletRequest request) throws UnsupportedEncodingException {
 		Object[] params;
 		int optionNum = 0;
 		if (oAuthProperties.isEnableXsrfToken()){
@@ -155,7 +159,7 @@ public class OAuthClientHandlerDelegate {
 		params = new String[3 + optionNum];
 		params[0] = oAuthProperties.getAuthorizeUrl();
 		params[1] = oAuthProperties.getClientId();
-		params[2] = getCallbackUrl(oAuthProperties, request);
+		params[2] = URLEncoder.encode(getCallbackUrl(oAuthProperties, request) , "UTF-8");
 		if (oAuthProperties.isEnableXsrfToken()){
 			params[3] = xsrfTokenGenerator.generate();
 			storeState(request , (String) params[3]);
@@ -216,7 +220,7 @@ public class OAuthClientHandlerDelegate {
 		if (oAuthProperties.isEnableXsrfToken()) {
 			String state = request.getParameter(PARAMETER_STATE);
 			String storeState = getStoreState(request);
-			if (StringUtils.isEmpty(state) || state.equals(storeState)){
+			if (StringUtils.isEmpty(state) || !state.equals(storeState)){
 				throw new IllegitimateStateException(String.format("非法的 state:%s" , state));
 			}
 		}

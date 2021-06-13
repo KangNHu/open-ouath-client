@@ -22,7 +22,7 @@ public interface OAuthToken {
 
 	/**
 	 * 返回token有效时长
-	 * @return 返回有效时长 单位毫秒
+	 * @return 返回有效时长 单位秒
 	 */
 	long getEffectiveTime();
 }

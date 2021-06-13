@@ -10,6 +10,8 @@ import org.codingeasy.oauth.client.model.WeChatOAuthToken;
 import org.codingeasy.oauth.client.utils.OKHttpUtils;
 
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
 * 微信 第三方登录  
@@ -19,7 +21,6 @@ public class WechatOAuthClientHandler implements OAuthClientHandler{
 
 	private String NAME = "wechat";
 
-	private final static String TOKEN_URL_TEMPLATE = "%s?appid=%s&secret=%s&code=%s&grant_type=authorization_code";
 
 	@Override
 	public String getName() {
@@ -28,16 +29,13 @@ public class WechatOAuthClientHandler implements OAuthClientHandler{
 
 	@Override
 	public OAuthToken createToken(OAuthProperties properties, String code) {
-
-		String tokenUrl = String.format(TOKEN_URL_TEMPLATE,
-				properties.getAccessTokenUrl(),
-				properties.getClientId(),
-				properties.getClientSecret(),
-				code);
-		String text = OKHttpUtils.get(tokenUrl);
 		ObjectMapper objectMapper = new ObjectMapper();
 		WeChatOAuthToken token;
 		try {
+			Map<String , Object> map = new HashMap<>();
+			map.put("appid" , properties.getClientSecret());
+			map.put("secret" , properties.getClientSecret());
+			String text = sendAccessTokenFormRequest(properties, code, map);
 			token = objectMapper.readValue(text , WeChatOAuthToken.class);
 		} catch (IOException e) {
 			throw new OAuthException(e);

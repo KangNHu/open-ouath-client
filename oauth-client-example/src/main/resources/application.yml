@@ -13,9 +13,9 @@ open:
         access-token-url: https://graph.qq.com/oauth2.0/token
         client-id: 1111943830
         client-secret: xrYGXZAOv1m7XRu7
-      properties[1]
-        name: wechat
-        authorize-url: https://graph.qq.com/oauth2.0/authorize
-        access-token-url: https://graph.qq.com/oauth2.0/token
-        client-id: 1111943830
-        client-secret: xrYGXZAOv1m7XRu7
+      properties[1]:
+        name: gitee
+        authorize-url: https://gitee.com/oauth/authorize
+        access-token-url: https://gitee.com/oauth/token
+        client-id: da0423f487fd06e4cf17da1956332cecf18c157281538561580ac507b4c5bead
+        client-secret: 71246877f1b3e0ea447160981b757f5f999a3459ee376f15998ab51f02576b7e
