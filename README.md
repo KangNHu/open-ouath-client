@@ -20,6 +20,36 @@
 - oauth-client-springboot 和spring boot集成
 - oauth-client-example 示例工程
 
+#### 示例工程
+
+##### 修改配置
+
+application.yml
+
+```yml
+open:
+  oauth2:
+    client:
+      properties[0]:
+        name: gitee
+        authorize-url: https://gitee.com/oauth/authorize
+        access-token-url: https://gitee.com/oauth/token
+        client-id: xxxx #改成你在第三方申请的client-id
+        client-secret: xxx #改成你在第三方申请的client-secret
+```
+
+##### 启动项目
+
+启动类为org.codingeasy.oauth.client.example.Application
+
+##### 访问登录页
+
+http://localhost:8811/oauth-example/index.html
+
+##### 点击码云登录
+
+![](image/login.jpg)
+
 #### 第三方依赖说明
 
 | groupId                    | artifactId           | 版本          |
@@ -30,8 +60,6 @@
 | org.springframework.boot   |                      | 2.2.0.RELEASE |
 | com.fasterxml.jackson.core |                      | 2.9.6         |
 | javax.servlet              | servlet-api          | 2.5           |
-
-
 
 #### 使用说明
 

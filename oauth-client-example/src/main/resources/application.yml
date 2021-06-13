@@ -8,12 +8,6 @@ open:
   oauth2:
     client:
       properties[0]:
-        name: qq
-        authorize-url: https://graph.qq.com/oauth2.0/authorize
-        access-token-url: https://graph.qq.com/oauth2.0/token
-        client-id: 1111943830
-        client-secret: xrYGXZAOv1m7XRu7
-      properties[1]:
         name: gitee
         authorize-url: https://gitee.com/oauth/authorize
         access-token-url: https://gitee.com/oauth/token

@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0f3af5ef-ddd4-4333-a13a-4075e04d086d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth-client-example/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/oauth-client-example/src/main/resources/application.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/oauth-client-core/target/" />
@@ -31,11 +32,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/oauth-client-springboot/src/main/java/org/codingeasy/oauth/client/springboot/annotation/EnableOpenOAuthClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="15" column="39" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="39" />
+            <state relative-caret-position="308">
+              <caret line="14" column="11" lean-forward="true" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -43,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/LoginHandler.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/oauth-client-example/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="65">
-              <caret line="13" column="29" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="29" />
+            <state relative-caret-position="132">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="14" selection-end-column="87" />
             </state>
           </provider>
         </entry>
@@ -77,6 +78,20 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/oauth-client-example/src/main/java/org/codingeasy/oauth/client/example/Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#398#399#0" expanded="true" />
+                <element signature="e#452#453#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/QQOAuthClientHandler.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="137">
@@ -84,15 +99,6 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/CasOAuthClientHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="8" column="2" lean-forward="true" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -198,7 +204,6 @@
         <option value="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/model/WeChatOAuthToken.java" />
         <option value="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/OAuthClientHandler.java" />
         <option value="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/index.html" />
-        <option value="$PROJECT_DIR$/oauth-client-example/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/utils/PathUtils.java" />
         <option value="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/OAuthClientHandlerDelegate.java" />
         <option value="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/utils/OKHttpUtils.java" />
@@ -214,6 +219,7 @@
         <option value="$PROJECT_DIR$/oauth-client-example/src/main/java/org/codingeasy/oauth/client/example/Application.java" />
         <option value="$PROJECT_DIR$/oauth-client-example/src/main/java/org/codingeasy/oauth/client/example/handler/SimpleLoginHandler.java" />
         <option value="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/QQOAuthClientHandler.java" />
+        <option value="$PROJECT_DIR$/oauth-client-example/src/main/resources/application.yml" />
       </list>
     </option>
   </component>
@@ -709,18 +715,18 @@
       <workItem from="1623471874834" duration="690000" />
       <workItem from="1623472572978" duration="21791000" />
       <workItem from="1623569834128" duration="5266000" />
-      <workItem from="1623575842933" duration="9485000" />
+      <workItem from="1623575842933" duration="10111000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37232000" />
+    <option name="totallyTimeSpent" value="37858000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30463982" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1935287" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -1070,18 +1076,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/oauth-client-example/src/main/java/org/codingeasy/oauth/client/example/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" selection-start-line="10" selection-end-line="18" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#398#399#0" expanded="true" />
-            <element signature="e#452#453#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/oauth-client-example/src/main/java/org/codingeasy/oauth/client/example/handler/SimpleLoginHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
@@ -1096,13 +1090,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oauth-client-example/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" column="87" lean-forward="true" selection-start-line="6" selection-end-line="20" selection-end-column="87" />
         </state>
       </provider>
     </entry>
@@ -1259,11 +1246,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/oauth-client-springboot/src/main/java/org/codingeasy/oauth/client/springboot/annotation/EnableOpenOAuthClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="39" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="39" />
+        <state relative-caret-position="308">
+          <caret line="14" column="11" lean-forward="true" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oauth-client-example/src/main/java/org/codingeasy/oauth/client/example/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#398#399#0" expanded="true" />
+            <element signature="e#452#453#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oauth-client-example/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="14" selection-end-column="87" />
         </state>
       </provider>
     </entry>
