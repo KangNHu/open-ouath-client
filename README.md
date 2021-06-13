@@ -118,6 +118,12 @@ open:
 | weibo              | 新浪微博                |
 | zhihu              | 知乎                    |
 
+##### 注解说明
+
+###### @EnableOpenOAuthClient 
+
+激活oauth cient 
+
 ##### 两个重要的Path说明
 
 **/oauth2/login**
