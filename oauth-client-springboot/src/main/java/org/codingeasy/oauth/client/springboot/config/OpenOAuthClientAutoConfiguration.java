@@ -44,7 +44,7 @@ public class OpenOAuthClientAutoConfiguration {
 	                                                                   @Autowired(required = false) List<OAuthProperties> oAuthProperties,
 	                                                                   LoginHandler loginHandler){
 		FilterRegistrationBean<OAuthClientFilter> filterRegistrationBean = new FilterRegistrationBean<>();
-		filterRegistrationBean.setOrder(Ordered.HIGHEST_PRECEDENCE);
+		filterRegistrationBean.setOrder(Ordered.LOWEST_PRECEDENCE-3);
 		filterRegistrationBean.setFilter(createFilter(xsrfTokenGenerator, oAuthClientHandlers, oAuthProperties, loginHandler));
 		filterRegistrationBean.setUrlPatterns(Arrays.asList("/*"));
 		return filterRegistrationBean;
