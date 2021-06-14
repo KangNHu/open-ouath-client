@@ -4,7 +4,7 @@ package org.codingeasy.oauth.client.exception;
 * 无效的code异常  
 * @author : KangNing Hu
 */
-public class InvalidCodeException extends OAuthException{
+public class InvalidCodeException extends AccessTokenException{
 
 	public InvalidCodeException() {
 	}

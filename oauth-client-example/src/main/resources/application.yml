@@ -2,7 +2,12 @@ server:
   port: 8811
   servlet:
     context-path: /oauth-example
-
+  ssl:
+    enabled: true
+    key-store-type: PKCS12
+    key-password: 123456
+    key-store-password: 123456
+    key-store: classpath:keystore.p12
 
 open:
   oauth2:
@@ -13,3 +18,15 @@ open:
         access-token-url: https://gitee.com/oauth/token
         client-id: da0423f487fd06e4cf17da1956332cecf18c157281538561580ac507b4c5bead
         client-secret: 71246877f1b3e0ea447160981b757f5f999a3459ee376f15998ab51f02576b7e
+      properties[1]:
+        name: facebook
+        authorize-url: https://www.facebook.com/v11.0/dialog/oauth
+        access-token-url: https://graph.facebook.com/v11.0/oauth/access_token
+        client-id: 591415948498680
+        client-secret: a35b0950daf4488ab6f6ca5a5b945d74
+      properties[2]:
+        name: github
+        authorize-url: https://github.com/login/oauth/authorize
+        access-token-url: https://github.com/login/oauth/access_token
+        client-id: 120952
+        client-secret: Iv1.ce4463f9b76b5ab5

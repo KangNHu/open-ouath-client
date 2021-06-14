@@ -33,12 +33,7 @@ public class QQOAuthClientHandler implements OAuthClientHandler{
 	 */
 	@Override
 	public String postAfterAuthorizeProcessor(String authorizeUrl, OAuthProperties oAuthProperties) {
-		HashMap<String, String> extend = oAuthProperties.getExtend();
-		String display = extend.get(PARAMETER_DISPLAY);
-		if (!StringUtils.isEmpty(display)){
-			return authorizeUrl +"&" + PARAMETER_DISPLAY + "=" +  display;
-		}
-		return authorizeUrl;
+		return appendParam(authorizeUrl , oAuthProperties.getExtend() , PARAMETER_DISPLAY);
 	}
 
 	/**

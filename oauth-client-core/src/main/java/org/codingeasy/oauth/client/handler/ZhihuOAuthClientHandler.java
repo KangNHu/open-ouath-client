@@ -9,7 +9,7 @@ import org.codingeasy.oauth.client.model.OAuthToken;
 */
 public class ZhihuOAuthClientHandler implements OAuthClientHandler {
 
-	private String NAME = "zhihu";
+	private final static String NAME = "zhihu";
 
 	@Override
 	public String getName() {

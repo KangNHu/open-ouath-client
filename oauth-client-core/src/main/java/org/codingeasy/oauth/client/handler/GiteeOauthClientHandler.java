@@ -2,10 +2,10 @@ package org.codingeasy.oauth.client.handler;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.codingeasy.oauth.client.OAuthProperties;
+import org.codingeasy.oauth.client.exception.AccessTokenException;
 import org.codingeasy.oauth.client.exception.OAuthException;
 import org.codingeasy.oauth.client.model.GiteeOAuthToken;
 import org.codingeasy.oauth.client.model.OAuthToken;
-import org.codingeasy.oauth.client.utils.OKHttpUtils;
 
 
 /**
@@ -24,12 +24,13 @@ public class GiteeOauthClientHandler implements OAuthClientHandler {
 
 	@Override
 	public OAuthToken createToken(OAuthProperties properties, String code) {
+		String text =null;
 		try {
-			String text = sendAccessTokenFormRequest(properties, code);
+			text = sendAccessTokenFormRequest(properties, code);
 			ObjectMapper objectMapper = new ObjectMapper();
 			return objectMapper.readValue(text , GiteeOAuthToken.class);
 		}catch (Exception e){
-			throw new OAuthException(e);
+			throw new AccessTokenException(text ,e);
 		}
 	}
 

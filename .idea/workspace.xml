@@ -2,8 +2,76 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f3af5ef-ddd4-4333-a13a-4075e04d086d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/exception/AccessTokenException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/model/FacebookOAuthToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/model/GithubOAuthToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/model/WeiboOAuthToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/css/util.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/fonts/font-awesome-4.7.0/HELP-US-OUT.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/fonts/font-awesome-4.7.0/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/fonts/font-awesome-4.7.0/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/fonts/font-awesome-4.7.0/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/fonts/font-awesome-4.7.0/less/animated.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/fonts/font-awesome-4.7.0/less/bordered-pulled.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/fonts/font-awesome-4.7.0/less/core.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/fonts/font-awesome-4.7.0/less/fixed-width.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/fonts/font-awesome-4.7.0/less/font-awesome.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/fonts/font-awesome-4.7.0/less/icons.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/fonts/font-awesome-4.7.0/less/larger.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/fonts/font-awesome-4.7.0/less/list.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/fonts/font-awesome-4.7.0/less/mixins.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/fonts/font-awesome-4.7.0/less/path.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/fonts/font-awesome-4.7.0/less/rotated-flipped.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/fonts/font-awesome-4.7.0/less/screen-reader.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/fonts/font-awesome-4.7.0/less/stacked.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/fonts/font-awesome-4.7.0/less/variables.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/fonts/font-awesome-4.7.0/scss/_animated.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/fonts/font-awesome-4.7.0/scss/_bordered-pulled.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/fonts/font-awesome-4.7.0/scss/_core.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/fonts/font-awesome-4.7.0/scss/_fixed-width.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/fonts/font-awesome-4.7.0/scss/_icons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/fonts/font-awesome-4.7.0/scss/_larger.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/fonts/font-awesome-4.7.0/scss/_list.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/fonts/font-awesome-4.7.0/scss/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/fonts/font-awesome-4.7.0/scss/_path.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/fonts/font-awesome-4.7.0/scss/_rotated-flipped.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/fonts/font-awesome-4.7.0/scss/_screen-reader.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/fonts/font-awesome-4.7.0/scss/_stacked.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/fonts/font-awesome-4.7.0/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/fonts/font-awesome-4.7.0/scss/font-awesome.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/fonts/iconic/css/material-design-iconic-font.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/fonts/iconic/css/material-design-iconic-font.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/fonts/iconic/fonts/Material-Design-Iconic-Font.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/fonts/iconic/fonts/Material-Design-Iconic-Font.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/fonts/iconic/fonts/Material-Design-Iconic-Font.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/fonts/iconic/fonts/Material-Design-Iconic-Font.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/fonts/iconic/fonts/Material-Design-Iconic-Font.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/images/bg-01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/vendor/jquery/jquery-3.2.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flattened-pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth-client-core/.flattened-pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/exception/InvalidCodeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/exception/InvalidCodeException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/FacebookOAuthClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/FacebookOAuthClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/GiteeOauthClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/GiteeOauthClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/GithubOAuthClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/GithubOAuthClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/OAuthClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/OAuthClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/WechatOAuthClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/WechatOAuthClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/WeiboOAuthClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/WeiboOAuthClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/utils/OKHttpUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/utils/OKHttpUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth-client-example/.flattened-pom.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/oauth-client-example/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/oauth-client-example/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/Login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth-client-springboot/.flattened-pom.xml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/oauth-client-core/target/" />
@@ -21,22 +89,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/OAuthClientFilter.java">
+        <entry file="file://$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/GithubOAuthClientHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="33" column="27" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/oauth-client-springboot/src/main/java/org/codingeasy/oauth/client/springboot/annotation/EnableOpenOAuthClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="14" column="11" lean-forward="true" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+            <state relative-caret-position="486">
+              <caret line="37" column="27" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -47,20 +103,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/oauth-client-example/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="14" selection-end-column="87" />
+            <state relative-caret-position="66">
+              <caret line="3" column="18" lean-forward="true" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/OAuthClientHandlerDelegate.java">
+        <entry file="file://$PROJECT_DIR$/oauth-client-example/src/main/resources/static/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="150">
+              <caret line="70" column="50" selection-start-line="70" selection-start-column="50" selection-end-line="70" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -68,8 +121,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/OAuthClientHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="876">
-              <caret line="61" column="44" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="44" />
+            <state relative-caret-position="392">
+              <caret line="120" column="18" lean-forward="true" selection-start-line="120" selection-start-column="18" selection-end-line="120" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -78,24 +131,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/oauth-client-example/src/main/java/org/codingeasy/oauth/client/example/Application.java">
+        <entry file="file://$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/GiteeOauthClientHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#398#399#0" expanded="true" />
-                <element signature="e#452#453#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/QQOAuthClientHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
+            <state relative-caret-position="495">
+              <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -104,38 +143,46 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/model/SimpleOAuthToken.java">
+        <entry file="file://$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/FacebookOAuthClientHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="902">
-              <caret line="41" column="32" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#641#642#0" expanded="true" />
-                <element signature="e#676#677#0" expanded="true" />
-                <element signature="e#807#808#0" expanded="true" />
-                <element signature="e#845#846#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="279">
+              <caret line="33" column="66" selection-start-line="33" selection-start-column="66" selection-end-line="33" selection-end-column="66" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/model/OAuthToken.java">
+        <entry file="file://$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/utils/OKHttpUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" selection-start-line="6" selection-end-line="27" selection-end-column="1" />
+            <state relative-caret-position="-1102">
+              <caret line="22" column="86" selection-start-line="22" selection-start-column="86" selection-end-line="22" selection-end-column="86" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/GithubOAuthClientHandler.java">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/squareup/okhttp3/okhttp/4.9.1/okhttp-4.9.1.jar!/okhttp3/Request.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="46" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="379">
+              <caret line="471" column="53" selection-start-line="471" selection-start-column="53" selection-end-line="471" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/squareup/okhttp3/okhttp/4.9.1/okhttp-4.9.1.jar!/okhttp3/RequestBody.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-72">
+              <caret line="153" column="95" selection-start-line="153" selection-start-column="85" selection-end-line="153" selection-end-column="95" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/squareup/okhttp3/okhttp/4.9.1/okhttp-4.9.1.jar!/okhttp3/MultipartBody.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -161,7 +208,16 @@
       <find>jackson.version</find>
       <find>servlet.version</find>
       <find>junit.version</find>
+      <find>fa-wechat</find>
+      <find>qq</find>
+      <find>bg2</find>
+      <find>fa</find>
+      <find>fa-qq</find>
     </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/oauth-client-example/src/main/resources/static/css</dir>
+      <dir>$PROJECT_DIR$/oauth-client-example/src/main/resources/static</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -169,12 +225,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/XsrfTokenGenerator.java" />
-        <option value="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/exception/OAuthException.java" />
-        <option value="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/exception/UnknownOAuthNameException.java" />
-        <option value="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/exception/InvalidCodeException.java" />
-        <option value="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/exception/AuthorizeFailureException.java" />
-        <option value="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/utils/HttpClientUtils.java" />
         <option value="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/exception/RedirectException.java" />
         <option value="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/LoginHandler.java" />
         <option value="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/utils/OAuthConfigUtills.java" />
@@ -185,9 +235,7 @@
         <option value="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/OAuthProperties.java" />
         <option value="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/exception/IllegitimateStateException.java" />
         <option value="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/CasOAuthClientHandler.java" />
-        <option value="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/FacebookOAuthClientHandler.java" />
         <option value="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/GoogleOAuthClientHandler.java" />
-        <option value="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/WeiboOAuthClientHandler.java" />
         <option value="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/ZhihuOAuthClientHandler.java" />
         <option value="$PROJECT_DIR$/oauth-client-springboot/pom.xml" />
         <option value="$PROJECT_DIR$/oauth-client-springboot/src/main/java/org/codingeasy/oauth/client/springboot/annotation/EnableOpenOAuthClient.java" />
@@ -202,23 +250,31 @@
         <option value="$PROJECT_DIR$/oauth-client-core/pom.xml" />
         <option value="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/model/WechatTokenResponse.java" />
         <option value="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/model/WeChatOAuthToken.java" />
-        <option value="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/OAuthClientHandler.java" />
-        <option value="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/index.html" />
         <option value="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/utils/PathUtils.java" />
         <option value="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/OAuthClientHandlerDelegate.java" />
-        <option value="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/utils/OKHttpUtils.java" />
         <option value="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/model/OAuthToken.java" />
         <option value="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/model/GiteeOAuthToken.java" />
-        <option value="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/GiteeOauthClientHandler.java" />
-        <option value="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/WechatOAuthClientHandler.java" />
         <option value="$PROJECT_DIR$/oauth-client-example/src/main/java/org/codingeasy/oauth/client/example/controller/UserController.java" />
         <option value="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/GithubOAuthCientHandler.java" />
-        <option value="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/GithubOAuthClientHandler.java" />
         <option value="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/utils/OAuthConfigUtils.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/oauth-client-example/src/main/java/org/codingeasy/oauth/client/example/Application.java" />
         <option value="$PROJECT_DIR$/oauth-client-example/src/main/java/org/codingeasy/oauth/client/example/handler/SimpleLoginHandler.java" />
         <option value="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/QQOAuthClientHandler.java" />
+        <option value="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/model/WeiboOAuthToken.java" />
+        <option value="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/model/FacebookOAuthToken.java" />
+        <option value="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/exception/AccessTokenException.java" />
+        <option value="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/exception/InvalidCodeException.java" />
+        <option value="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/WeiboOAuthClientHandler.java" />
+        <option value="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/WechatOAuthClientHandler.java" />
+        <option value="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/GiteeOauthClientHandler.java" />
+        <option value="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/index1.html" />
+        <option value="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/model/GithubOAuthToken.java" />
+        <option value="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/utils/OKHttpUtils.java" />
+        <option value="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/FacebookOAuthClientHandler.java" />
+        <option value="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/OAuthClientHandler.java" />
+        <option value="$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/GithubOAuthClientHandler.java" />
+        <option value="$PROJECT_DIR$/oauth-client-example/src/main/resources/static/index.html" />
         <option value="$PROJECT_DIR$/oauth-client-example/src/main/resources/application.yml" />
       </list>
     </option>
@@ -359,19 +415,6 @@
               <item name="codingeasy" type="462c0819:PsiDirectoryNode" />
               <item name="oauth" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="exception" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="open-ouath-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="open-ouath-client" type="462c0819:PsiDirectoryNode" />
-              <item name="oauth-client-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="codingeasy" type="462c0819:PsiDirectoryNode" />
-              <item name="oauth" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="handler" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -390,12 +433,6 @@
             <path>
               <item name="open-ouath-client" type="b2602c69:ProjectViewProjectNode" />
               <item name="open-ouath-client" type="462c0819:PsiDirectoryNode" />
-              <item name="oauth-client-core" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="open-ouath-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="open-ouath-client" type="462c0819:PsiDirectoryNode" />
               <item name="oauth-client-example" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -473,34 +510,6 @@
               <item name="oauth" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="example" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="open-ouath-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="open-ouath-client" type="462c0819:PsiDirectoryNode" />
-              <item name="oauth-client-example" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="codingeasy" type="462c0819:PsiDirectoryNode" />
-              <item name="oauth" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="open-ouath-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="open-ouath-client" type="462c0819:PsiDirectoryNode" />
-              <item name="oauth-client-example" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="codingeasy" type="462c0819:PsiDirectoryNode" />
-              <item name="oauth" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="handler" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="open-ouath-client" type="b2602c69:ProjectViewProjectNode" />
@@ -524,110 +533,6 @@
               <item name="open-ouath-client" type="462c0819:PsiDirectoryNode" />
               <item name="oauth-client-springboot" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="open-ouath-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="open-ouath-client" type="462c0819:PsiDirectoryNode" />
-              <item name="oauth-client-springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="open-ouath-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="open-ouath-client" type="462c0819:PsiDirectoryNode" />
-              <item name="oauth-client-springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="open-ouath-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="open-ouath-client" type="462c0819:PsiDirectoryNode" />
-              <item name="oauth-client-springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="open-ouath-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="open-ouath-client" type="462c0819:PsiDirectoryNode" />
-              <item name="oauth-client-springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="open-ouath-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="open-ouath-client" type="462c0819:PsiDirectoryNode" />
-              <item name="oauth-client-springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="codingeasy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="open-ouath-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="open-ouath-client" type="462c0819:PsiDirectoryNode" />
-              <item name="oauth-client-springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="codingeasy" type="462c0819:PsiDirectoryNode" />
-              <item name="oauth" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="open-ouath-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="open-ouath-client" type="462c0819:PsiDirectoryNode" />
-              <item name="oauth-client-springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="codingeasy" type="462c0819:PsiDirectoryNode" />
-              <item name="oauth" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="open-ouath-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="open-ouath-client" type="462c0819:PsiDirectoryNode" />
-              <item name="oauth-client-springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="codingeasy" type="462c0819:PsiDirectoryNode" />
-              <item name="oauth" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="open-ouath-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="open-ouath-client" type="462c0819:PsiDirectoryNode" />
-              <item name="oauth-client-springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="codingeasy" type="462c0819:PsiDirectoryNode" />
-              <item name="oauth" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="open-ouath-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="open-ouath-client" type="462c0819:PsiDirectoryNode" />
-              <item name="oauth-client-springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="codingeasy" type="462c0819:PsiDirectoryNode" />
-              <item name="oauth" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -638,26 +543,29 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/oauth-client-example/src/main/resources/static" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.111234725" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/oauth-client-example/src/main/resources" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/oauth-client-example/src/main/resources/static" />
+      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.codingeasy.oauth.client.utils" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/oauth-client-example/src/main/resources" />
+      <recent name="$PROJECT_DIR$/oauth-client-example/src/main/resources/" />
+      <recent name="$PROJECT_DIR$/image" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -715,33 +623,33 @@
       <workItem from="1623471874834" duration="690000" />
       <workItem from="1623472572978" duration="21791000" />
       <workItem from="1623569834128" duration="5266000" />
-      <workItem from="1623575842933" duration="10111000" />
+      <workItem from="1623575842933" duration="20625000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37858000" />
+    <option name="totallyTimeSpent" value="48372000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1935287" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1996337" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32959184" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32959184" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.37755102" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.29183674" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="LuaCheck" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32959184" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32959184" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Spring" order="12" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32959184" />
@@ -749,7 +657,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" visible="true" weight="0.2045177" />
+      <window_info anchor="right" id="Maven" order="4" visible="true" weight="0.08791209" />
       <window_info anchor="right" id="Database" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Bean Validation" order="7" />
@@ -803,228 +711,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.2.0.RELEASE/spring-boot-2.2.0.RELEASE-sources.jar!/org/springframework/boot/context/properties/source/SpringConfigurationPropertySource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="82" column="53" selection-start-line="82" selection-start-column="53" selection-end-line="82" selection-end-column="53" />
-          <folding>
-            <element signature="e#4924#4925#0" expanded="true" />
-            <element signature="e#4949#4950#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.2.0.RELEASE/spring-boot-2.2.0.RELEASE-sources.jar!/org/springframework/boot/context/properties/source/ConfigurationPropertySource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="41" column="26" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.2.0.RELEASE/spring-boot-2.2.0.RELEASE-sources.jar!/org/springframework/boot/context/properties/source/ConfigurationProperty.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="55" column="23" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
-          <folding>
-            <element signature="e#1837#1838#0" expanded="true" />
-            <element signature="e#1861#1862#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oauth-client-springboot/src/main/java/org/codingeasy/oauth/client/springboot/config/OAuthClientProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="17" column="36" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#456#457#0" expanded="true" />
-            <element signature="e#480#481#0" expanded="true" />
-            <element signature="e#544#545#0" expanded="true" />
-            <element signature="e#579#580#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.2.0.RELEASE/spring-boot-2.2.0.RELEASE-sources.jar!/org/springframework/boot/context/properties/bind/Binder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="406" selection-start-line="406" selection-end-line="406" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oauth-client-example/src/main/resources/static/Login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="59" column="1" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oauth-client-core/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/model/WeChatOAuthToken.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-898">
-          <caret line="8" column="44" lean-forward="true" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
-          <folding>
-            <element signature="e#1142#1143#0" expanded="true" />
-            <element signature="e#1167#1168#0" expanded="true" />
-            <element signature="e#1220#1221#0" expanded="true" />
-            <element signature="e#1261#1262#0" expanded="true" />
-            <element signature="e#1314#1315#0" expanded="true" />
-            <element signature="e#1353#1354#0" expanded="true" />
-            <element signature="e#1454#1455#0" expanded="true" />
-            <element signature="e#1472#1473#0" expanded="true" />
-            <element signature="e#1519#1520#0" expanded="true" />
-            <element signature="e#1537#1538#0" expanded="true" />
-            <element signature="e#1583#1584#0" expanded="true" />
-            <element signature="e#1598#1599#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/net/URLEncoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="199" column="25" selection-start-line="199" selection-start-column="25" selection-end-line="199" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/squareup/okhttp3/okhttp/4.9.1/okhttp-4.9.1.jar!/okhttp3/Request.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="471" column="56" selection-start-line="471" selection-start-column="45" selection-end-line="471" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/squareup/okhttp3/okhttp/4.9.1/okhttp-4.9.1.jar!/okhttp3/RequestBody.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
-          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/squareup/okhttp3/okhttp/4.9.1/okhttp-4.9.1.jar!/okhttp3/FormBody.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="127" column="91" selection-start-line="127" selection-start-column="78" selection-end-line="127" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="513" column="35" selection-start-line="513" selection-start-column="35" selection-end-line="513" selection-end-column="35" />
-          <folding>
-            <element signature="e#4677#4678#0" expanded="true" />
-            <element signature="e#4714#4715#0" expanded="true" />
-            <element signature="e#18781#18782#0" expanded="true" />
-            <element signature="e#18834#18835#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/nio/charset/CharsetDecoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-401">
-          <caret line="136" column="22" selection-start-line="136" selection-start-column="22" selection-end-line="136" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/nio/charset/CoderMalfunctionError.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/nio/charset/Charset.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="270" column="29" selection-start-line="270" selection-start-column="22" selection-end-line="270" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/nio/charset/CharsetEncoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="136" column="22" selection-start-line="136" selection-start-column="22" selection-end-line="136" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/nio/charset/CodingErrorAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/nio/charset/MalformedInputException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/utils/PathUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="44" column="12" lean-forward="true" selection-start-line="44" selection-start-column="12" selection-end-line="44" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/utils/OKHttpUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="51" column="17" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/model/GiteeOAuthToken.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="42" column="13" lean-forward="true" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
-          <folding>
-            <element signature="e#177#178#0" expanded="true" />
-            <element signature="e#195#196#0" expanded="true" />
-            <element signature="e#242#243#0" expanded="true" />
-            <element signature="e#260#261#0" expanded="true" />
-            <element signature="e#306#307#0" expanded="true" />
-            <element signature="e#321#322#0" expanded="true" />
-            <element signature="e#777#778#0" expanded="true" />
-            <element signature="e#802#803#0" expanded="true" />
-            <element signature="e#835#836#0" expanded="true" />
-            <element signature="e#858#859#0" expanded="true" />
-            <element signature="e#905#906#0" expanded="true" />
-            <element signature="e#938#939#0" expanded="true" />
-            <element signature="e#991#992#0" expanded="true" />
-            <element signature="e#1032#1033#0" expanded="true" />
-            <element signature="e#1085#1086#0" expanded="true" />
-            <element signature="e#1124#1125#0" expanded="true" />
-            <element signature="e#1153#1154#0" expanded="true" />
-            <element signature="e#1172#1173#0" expanded="true" />
-            <element signature="e#1211#1212#0" expanded="true" />
-            <element signature="e#1236#1237#0" expanded="true" />
-            <element signature="e#1267#1268#0" expanded="true" />
-            <element signature="e#1290#1291#0" expanded="true" />
-            <element signature="e#1335#1336#0" expanded="true" />
-            <element signature="e#1368#1369#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.27/tomcat-embed-core-9.0.27-sources.jar!/javax/servlet/http/Cookie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="166" column="11" selection-start-line="166" selection-start-column="11" selection-end-line="166" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.0.RELEASE/spring-web-5.2.0.RELEASE-sources.jar!/org/springframework/web/context/annotation/RequestScope.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="219">
@@ -1086,72 +772,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/oauth-client-example/src/main/resources/static/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/FacebookOAuthClientHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="12" column="35" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/GiteeOauthClientHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="16" column="46" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/GoogleOAuthClientHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="46" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="46" />
-          <folding>
-            <element signature="e#452#453#0" expanded="true" />
-            <element signature="e#470#471#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/WechatOAuthClientHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="21" column="33" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/WeiboOAuthClientHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="32" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/ZhihuOAuthClientHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="32" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/OAuthProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="50" column="41" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/XsrfTokenGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -1170,16 +790,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="8" column="2" lean-forward="true" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/OAuthClientHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="876">
-          <caret line="61" column="44" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1204,36 +814,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/QQOAuthClientHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/OAuthClientHandlerDelegate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/GithubOAuthClientHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="46" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/OAuthClientFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -1247,7 +827,7 @@
     <entry file="file://$PROJECT_DIR$/oauth-client-springboot/src/main/java/org/codingeasy/oauth/client/springboot/annotation/EnableOpenOAuthClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
-          <caret line="14" column="11" lean-forward="true" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1257,7 +837,7 @@
     <entry file="file://$PROJECT_DIR$/oauth-client-example/src/main/java/org/codingeasy/oauth/client/example/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
-          <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="24" />
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#398#399#0" expanded="true" />
@@ -1266,10 +846,322 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/OAuthProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="40" column="31" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/model/FacebookOAuthToken.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+          <folding>
+            <element signature="e#423#424#0" expanded="true" />
+            <element signature="e#448#449#0" expanded="true" />
+            <element signature="e#481#482#0" expanded="true" />
+            <element signature="e#504#505#0" expanded="true" />
+            <element signature="e#551#552#0" expanded="true" />
+            <element signature="e#584#585#0" expanded="true" />
+            <element signature="e#637#638#0" expanded="true" />
+            <element signature="e#678#679#0" expanded="true" />
+            <element signature="e#192#193#0" expanded="true" />
+            <element signature="e#210#211#0" expanded="true" />
+            <element signature="e#257#258#0" expanded="true" />
+            <element signature="e#275#276#0" expanded="true" />
+            <element signature="e#321#322#0" expanded="true" />
+            <element signature="e#336#337#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/exception/IllegitimateStateException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/exception/AccessTokenException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+          <folding>
+            <element signature="e#232#233#0" expanded="true" />
+            <element signature="e#247#248#0" expanded="true" />
+            <element signature="e#312#313#0" expanded="true" />
+            <element signature="e#340#341#0" expanded="true" />
+            <element signature="e#389#390#0" expanded="true" />
+            <element signature="e#408#409#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/ZhihuOAuthClientHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="32" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/exception/InvalidCodeException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+          <folding>
+            <element signature="e#228#229#0" expanded="true" />
+            <element signature="e#243#244#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/model/GiteeOAuthToken.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oauth-client-example/src/main/resources/static/Login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1201">
+          <caret line="59" column="1" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oauth-client-example/src/main/resources/static/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="17" lean-forward="true" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="169">
+            <caret line="126" column="47" selection-start-line="126" selection-start-column="41" selection-end-line="126" selection-end-column="47" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oauth-client-example/src/main/resources/static/images/facebook.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oauth-client-example/src/main/resources/static/images/bg-01.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oauth-client-example/src/main/resources/static/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="127" column="14" selection-start-line="127" selection-start-column="14" selection-end-line="127" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oauth-client-example/src/main/resources/static/fonts/font-awesome-4.7.0/css/font-awesome.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="1533" column="1" selection-start-line="1533" selection-start-column="1" selection-end-line="1533" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oauth-client-example/src/main/resources/static/css/util.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/model/WeiboOAuthToken.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/WeiboOAuthClientHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="60" column="58" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/WechatOAuthClientHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="47" column="36" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/QQOAuthClientHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="58" column="44" selection-start-line="58" selection-start-column="44" selection-end-line="58" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/OAuthClientHandlerDelegate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="28" column="54" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/GoogleOAuthClientHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="46" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="46" />
+          <folding>
+            <element signature="e#452#453#0" expanded="true" />
+            <element signature="e#470#471#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="554" column="13" selection-start-line="554" selection-start-column="13" selection-end-line="554" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/lang/Boolean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="120" column="26" selection-start-line="120" selection-start-column="26" selection-end-line="120" selection-end-column="26" />
+          <folding>
+            <element signature="e#3553#3554#0" expanded="true" />
+            <element signature="e#3619#3620#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/model/GithubOAuthToken.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="29" />
+          <folding>
+            <element signature="e#383#384#0" expanded="true" />
+            <element signature="e#408#409#0" expanded="true" />
+            <element signature="e#437#438#0" expanded="true" />
+            <element signature="e#456#457#0" expanded="true" />
+            <element signature="e#495#496#0" expanded="true" />
+            <element signature="e#520#521#0" expanded="true" />
+            <element signature="e#553#554#0" expanded="true" />
+            <element signature="e#576#577#0" expanded="true" />
+            <element signature="e#623#624#0" expanded="true" />
+            <element signature="e#656#657#0" expanded="true" />
+            <element signature="e#189#190#0" expanded="true" />
+            <element signature="e#207#208#0" expanded="true" />
+            <element signature="e#254#255#0" expanded="true" />
+            <element signature="e#272#273#0" expanded="true" />
+            <element signature="e#514#515#0" expanded="true" />
+            <element signature="e#529#530#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/squareup/okhttp3/okhttp/4.9.1/okhttp-4.9.1.jar!/okhttp3/FormBody.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="127" column="11" selection-start-line="127" selection-start-column="11" selection-end-line="127" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/squareup/okio/okio/2.8.0/okio-2.8.0.jar!/okio/ByteString.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="47" column="33" lean-forward="true" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/squareup/okhttp3/okhttp/4.9.1/okhttp-4.9.1.jar!/okhttp3/MultipartBody.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/squareup/okhttp3/okhttp/4.9.1/okhttp-4.9.1.jar!/okhttp3/Request.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="471" column="53" selection-start-line="471" selection-start-column="53" selection-end-line="471" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/squareup/okhttp3/okhttp/4.9.1/okhttp-4.9.1.jar!/okhttp3/RequestBody.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-72">
+          <caret line="153" column="95" selection-start-line="153" selection-start-column="85" selection-end-line="153" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/utils/OKHttpUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1102">
+          <caret line="22" column="86" selection-start-line="22" selection-start-column="86" selection-end-line="22" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/FacebookOAuthClientHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="33" column="66" selection-start-line="33" selection-start-column="66" selection-end-line="33" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/OAuthClientHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="120" column="18" lean-forward="true" selection-start-line="120" selection-start-column="18" selection-end-line="120" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/GiteeOauthClientHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oauth-client-core/src/main/java/org/codingeasy/oauth/client/handler/GithubOAuthClientHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="37" column="27" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oauth-client-example/src/main/resources/static/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="70" column="50" selection-start-line="70" selection-start-column="50" selection-end-line="70" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/oauth-client-example/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="14" selection-end-column="87" />
+        <state relative-caret-position="66">
+          <caret line="3" column="18" lean-forward="true" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -1312,6 +1204,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1328,7 +1221,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

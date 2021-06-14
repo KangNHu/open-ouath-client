@@ -3,6 +3,7 @@ package org.codingeasy.oauth.client.handler;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.commons.lang3.StringUtils;
 import org.codingeasy.oauth.client.OAuthProperties;
+import org.codingeasy.oauth.client.exception.AccessTokenException;
 import org.codingeasy.oauth.client.exception.InvalidCodeException;
 import org.codingeasy.oauth.client.exception.OAuthException;
 import org.codingeasy.oauth.client.model.OAuthToken;
@@ -19,7 +20,7 @@ import java.util.Map;
 */
 public class WechatOAuthClientHandler implements OAuthClientHandler{
 
-	private String NAME = "wechat";
+	private final static String NAME = "wechat";
 
 
 	@Override
@@ -38,7 +39,7 @@ public class WechatOAuthClientHandler implements OAuthClientHandler{
 			String text = sendAccessTokenFormRequest(properties, code, map);
 			token = objectMapper.readValue(text , WeChatOAuthToken.class);
 		} catch (IOException e) {
-			throw new OAuthException(e);
+			throw new AccessTokenException(e);
 		}
 		//获取token失败
 		if (!StringUtils.isEmpty(token.getErrcode())){
@@ -46,7 +47,7 @@ public class WechatOAuthClientHandler implements OAuthClientHandler{
 			if ("40029".equals(token.getErrcode())){
 				throw new InvalidCodeException(token.getErrmsg());
 			}
-			throw new OAuthException(token.getErrmsg());
+			throw new AccessTokenException(token.getErrmsg());
 		}
 		return token;
 	}
