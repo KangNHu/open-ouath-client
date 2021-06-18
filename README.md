@@ -44,11 +44,11 @@ open:
 
 ##### 访问登录页
 
-http://localhost:8811/oauth-example/index.html
+https://localhost:8811/oauth-example/index.html
 
 ##### 点击码云登录
 
-![](image/login.jpg)
+![](image/login.png)
 
 #### 第三方依赖说明
 
@@ -159,6 +159,7 @@ open:
 - 登录url path
 - 参数
   - oauth-name：类型为query, 标示第三方登录名称 ，这里可以参考 [点击前往](#oauth-name)
+  - 第三方扩展参数 可选 也可以通过配置的方式进行配置
 
 **/oauth2/call**
 

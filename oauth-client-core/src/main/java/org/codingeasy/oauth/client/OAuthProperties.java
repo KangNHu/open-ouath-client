@@ -51,7 +51,7 @@ public class OAuthProperties implements Cloneable{
 	private HashMap<String,String> extend = new HashMap<>();
 
 	@Override
-	protected Object clone() throws CloneNotSupportedException {
+	public Object clone() throws CloneNotSupportedException {
 		OAuthProperties clone = (OAuthProperties) super.clone();
 		clone.setExtend((HashMap<String, String>) extend.clone());
 		return clone;

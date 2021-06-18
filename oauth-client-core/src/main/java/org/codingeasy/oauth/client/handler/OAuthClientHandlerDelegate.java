@@ -1,6 +1,7 @@
 package org.codingeasy.oauth.client.handler;
 
 import org.apache.commons.collections4.CollectionUtils;
+import org.apache.commons.lang3.ObjectUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.codingeasy.oauth.client.OAuthProperties;
 import org.codingeasy.oauth.client.XsrfTokenGenerator;
@@ -25,13 +26,13 @@ import static org.codingeasy.oauth.client.OAuthClientFilter.CALL_PATH;
 * @author : KangNing Hu
 */
 public class OAuthClientHandlerDelegate {
-
-	public final static String PARAMETER_RESPONSE_TYPE = "code";
-	public final static String PARAMETER_STATE = "state";
-	public final static String PARAMETER_NAME = "oauth-name";
-	public final static String SESSION_PARAMETER_STATE = "_" + PARAMETER_STATE;
+	private final static String PARAMETER_SCOPE = "scope";
+	private final static String PARAMETER_RESPONSE_TYPE = "code";
+	private final static String PARAMETER_STATE = "state";
+	private final static String PARAMETER_NAME = "oauth-name";
+	private final static String SESSION_PARAMETER_STATE = "_" + PARAMETER_STATE;
 	//授权url 模版
-	public final static String AUTHORIZE_URL_TEMPLATE = "%s?response_type=code&client_id=%s&redirect_uri=%s";
+	private final static String AUTHORIZE_URL_TEMPLATE = "%s?response_type=code&client_id=%s&redirect_uri=%s";
 	/**
 	 * oauth client 处理器列表
 	 */
@@ -45,7 +46,7 @@ public class OAuthClientHandlerDelegate {
 	/**
 	 * oauth client 授权配置
 	 */
-	private Map<String , OAuthProperties> authPropertiesMap = new HashMap<>();
+	private Map<String , OAuthProperties> oAuthPropertiesMap = new HashMap<>();
 
 	/**
 	 * 新增oauth 客户端处理器
@@ -93,7 +94,7 @@ public class OAuthClientHandlerDelegate {
 			if (StringUtils.isEmpty(authProperty.getName())){
 				throw new IllegalStateException(String.format("授权配置名称不能为空 %s" , authProperty));
 			}
-			authPropertiesMap.put(authProperty.getName() , authProperty);
+			oAuthPropertiesMap.put(authProperty.getName() , authProperty);
 		}
 	}
 
@@ -105,19 +106,42 @@ public class OAuthClientHandlerDelegate {
 		this.addOAuthProperties(Arrays.asList(authProperty));
 	}
 
+	/**
+	 * 处理 token
+	 * @param request 请求对象
+	 * @param response 响应对象
+	 */
+	public OAuthToken accessToken(HttpServletRequest request , HttpServletResponse response){
+		//获取授权码
+		String code = request.getParameter(PARAMETER_RESPONSE_TYPE);
+		OAuthProperties oAuthProperties = getOAuthProperties(request);
+		OAuthClientHandler oAuthClientHandler = getOAuthClientHandler(request);
+		//校验xsrf
+		if (oAuthProperties.isEnableXsrfToken()) {
+			String state = request.getParameter(PARAMETER_STATE);
+			String storeState = getStoreState(request);
+			if (StringUtils.isEmpty(state) || !state.equals(storeState)){
+				throw new IllegitimateStateException(String.format("非法的 state:%s" , state));
+			}
+		}
 
+		//是否取消授权
+		if (oAuthClientHandler.isCancelAuthorize(request)){
+			throw new CancelAuthorizeException("取消第三方授权");
+		}
+		//设置回调地址
+		OAuthConfigUtils.setCallbackUrl(oAuthProperties , getCallbackUrl(oAuthProperties,request));
+		//创建创建第三方token
+		return oAuthClientHandler.createToken( oAuthProperties, code);
+	}
 	/**
 	 * 执行授权
 	 * @param request 请求上下文
 	 * @param response 响应上下文
 	 */
 	public void doAuthorize(HttpServletRequest request , HttpServletResponse response){
-		String oauthName = request.getParameter(PARAMETER_NAME);
-		OAuthProperties oAuthProperties = authPropertiesMap.get(oauthName);
-		OAuthClientHandler oAuthClientHandler = oAuthClientHandlerMap.get(oauthName);
-		if (oAuthProperties == null ||oAuthClientHandler == null){
-			throw new UnknownOAuthNameException(String.format("未知的授权名称 %s" , oauthName));
-		}
+		OAuthProperties oAuthProperties = getOAuthProperties(request);
+		OAuthClientHandler oAuthClientHandler = getOAuthClientHandler(request);
 		String authorizeUrlTemplate = AUTHORIZE_URL_TEMPLATE;
 		if (oAuthProperties.isEnableXsrfToken()){
 			authorizeUrlTemplate = authorizeUrlTemplate + "&state=%s";
@@ -139,6 +163,70 @@ public class OAuthClientHandlerDelegate {
 		}catch (Exception e){
 			throw new RedirectException(e);
 		}
+	}
+
+	/**
+	 * 获取oauth 客户端处理其
+	 * @param request 请求对象
+	 * @return 返回和当前请求匹配的 客户端处理其
+	 * @throws UnknownOAuthNameException 当找不到当前请求对应的oauht 配置时 抛出
+	 */
+	private OAuthClientHandler getOAuthClientHandler(HttpServletRequest request) {
+		String oauthName = request.getParameter(PARAMETER_NAME);
+		if (StringUtils.isEmpty(oauthName)){
+			throw new UnknownOAuthNameException("授权名称不能为空");
+		}
+		OAuthClientHandler oAuthClientHandler = oAuthClientHandlerMap.get(oauthName);
+		if (oAuthClientHandler == null){
+			throw new UnknownOAuthNameException(String.format("未知的授权名称 %s" , oauthName));
+		}
+		return oAuthClientHandler;
+	}
+
+	/**
+	 * 获取 授权配置
+	 * @param request 请求对象
+	 * @return 返回和当前请求匹配的oauth 配置
+	 * @throws UnknownOAuthNameException 当找不到当前请求对应的oauht 配置时 抛出
+	 */
+	private OAuthProperties getOAuthProperties(HttpServletRequest request) {
+		String oauthName = null;
+		String scope = null;
+		//遍历所以请求参数
+		Enumeration<String> parameterNames = request.getParameterNames();
+		Map<String , String> extend = new HashMap<>();
+		while (parameterNames.hasMoreElements()){
+			String parameterName = parameterNames.nextElement();
+			switch (parameterName){
+				case PARAMETER_NAME: //授权名称
+					oauthName = request.getParameter(PARAMETER_NAME);
+					break;
+				case PARAMETER_SCOPE://授权范围
+					scope = request.getParameter(PARAMETER_SCOPE);
+					break;
+				default://扩展参数
+					extend.put(parameterName , request.getParameter(parameterName));
+
+			}
+		}
+		//授权名称不能为空
+		if (StringUtils.isEmpty(oauthName)){
+			throw new UnknownOAuthNameException("授权名称不能为空");
+		}
+		//根据授权名称获取 open 授权配置
+		OAuthProperties oAuthProperties = oAuthPropertiesMap.get(oauthName);
+		if (oAuthProperties == null){
+			throw new UnknownOAuthNameException(String.format("未知的授权名称 %s" , oauthName));
+		}
+		oAuthProperties = ObjectUtils.clone(oAuthProperties);
+		//如果请求指定了授权范围则使用请求所指定的
+		if (!StringUtils.isEmpty(scope)){
+			oAuthProperties.setScope(scope);
+		}
+		//使用请求的扩展参数覆盖配置的扩展参数
+		HashMap<String, String> oAuthPropertiesExtend = oAuthProperties.getExtend();
+		oAuthPropertiesExtend.putAll(extend);
+		return oAuthProperties;
 	}
 
 	/**
@@ -202,37 +290,6 @@ public class OAuthClientHandlerDelegate {
 		return PathUtils.getPathPrefix(request) + CALL_PATH + "?" +PARAMETER_NAME +"=" + oAuthProperties.getName();
 	}
 
-	/**
-	 * 处理 token
-	 * @param request 请求对象
-	 * @param response 响应对象
-	 */
-	public OAuthToken accessToken(HttpServletRequest request , HttpServletResponse response){
-		//获取授权码
-		String code = request.getParameter(PARAMETER_RESPONSE_TYPE);
-		String name = request.getParameter(PARAMETER_NAME);
-		OAuthClientHandler authClientHandler = oAuthClientHandlerMap.get(name);
-		OAuthProperties oAuthProperties = authPropertiesMap.get(name);
-		if (authClientHandler == null || oAuthProperties == null){
-			throw new UnknownOAuthNameException(String.format("未知的授权名称 %s" , name));
-		}
-		//校验xsrf
-		if (oAuthProperties.isEnableXsrfToken()) {
-			String state = request.getParameter(PARAMETER_STATE);
-			String storeState = getStoreState(request);
-			if (StringUtils.isEmpty(state) || !state.equals(storeState)){
-				throw new IllegitimateStateException(String.format("非法的 state:%s" , state));
-			}
-		}
 
-		//是否取消授权
-		if (authClientHandler.isCancelAuthorize(request)){
-			throw new CancelAuthorizeException("取消第三方授权");
-		}
-		//设置回调地址
-		OAuthConfigUtils.setCallbackUrl(oAuthProperties , getCallbackUrl(oAuthProperties,request));
-		//创建创建第三方token
-		return authClientHandler.createToken( oAuthProperties, code);
-	}
 
 }
