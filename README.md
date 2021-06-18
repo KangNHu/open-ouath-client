@@ -152,13 +152,14 @@ open:
 
 激活oauth cient 
 
-##### 两个重要的Path说明
+##### open API接口说明
 
 **/oauth2/login**
 
 - 登录url path
 - 参数
   - oauth-name：类型为query, 标示第三方登录名称 ，这里可以参考 [点击前往](#oauth-name)
+  - scope : 第三方的授权范围 可选 也可以通过配置的方式进行配置
   - 第三方扩展参数 可选 也可以通过配置的方式进行配置
 
 **/oauth2/call**
