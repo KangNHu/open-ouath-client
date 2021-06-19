@@ -28,5 +28,11 @@ open:
         name: github
         authorize-url: https://github.com/login/oauth/authorize
         access-token-url: https://github.com/login/oauth/access_token
-        client-id: 120952
-        client-secret: Iv1.ce4463f9b76b5ab5
+        client-id: Iv1.ce4463f9b76b5ab5
+        client-secret: 08072a8d526b3f42d33bf088c49f32e914878b26
+      properties[3]:
+        name: google
+        authorize-url: https://accounts.google.com/o/oauth2/v2/auth
+        access-token-url: https://oauth2.googleapis.com/token
+        client-id: 506854378285-n1d5j90ipqo5gg57otlupjmuanck2nkr.apps.googleusercontent.com
+        client-secret: 1-ugEL56FKuW_uWdcOPWfx44

@@ -5,6 +5,7 @@ import org.codingeasy.oauth.client.model.OAuthToken;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 
 /**
  * 登录处理器
@@ -28,5 +29,5 @@ public interface LoginHandler {
 	 * @param response 响应对象
 	 * @param request 请求对象
 	 */
-	void dofFailure(OAuthException e , HttpServletResponse response, HttpServletRequest request);
+	void dofFailure(OAuthException e , HttpServletResponse response, HttpServletRequest request) throws IOException;
 }

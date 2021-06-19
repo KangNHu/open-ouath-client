@@ -4,12 +4,15 @@ import org.codingeasy.oauth.client.exception.OAuthException;
 import org.codingeasy.oauth.client.handler.LoginHandler;
 import org.codingeasy.oauth.client.model.OAuthToken;
 import org.springframework.stereotype.Component;
+import sun.net.www.http.ChunkedOutputStream;
 
 import javax.servlet.ServletContext;
+import javax.servlet.ServletOutputStream;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.Locale;
 
 /**
 *   
@@ -31,7 +34,10 @@ public class SimpleLoginHandler implements LoginHandler {
 	}
 
 	@Override
-	public void dofFailure(OAuthException e, HttpServletResponse response, HttpServletRequest request) {
-		e.printStackTrace();
+	public void dofFailure(OAuthException e, HttpServletResponse response, HttpServletRequest request) throws IOException {
+		response.setCharacterEncoding("UTF-8");
+		response.setContentType("*/*;charset=utf-8");
+		ServletOutputStream outputStream = response.getOutputStream();
+		outputStream.write(e.getMessage().getBytes("UTF-8"));
 	}
 }

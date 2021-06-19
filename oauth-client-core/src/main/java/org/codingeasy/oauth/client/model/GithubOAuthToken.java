@@ -6,52 +6,54 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 * github ouath token
 * @author : KangNing Hu
 */
-public class GithubOAuthToken implements  OAuthToken{
+public class GithubOAuthToken extends   SimpleOAuthToken{
 
 
-	@JsonProperty("access_token")
-	private String token;
+	@JsonProperty("refresh_token_expires_in")
+	private String refreshTokenEffectiveTime;
 
 
-	private String scope;
+	private String error;
+
+	@JsonProperty("error_description")
+	private String errorDescription;
+
+	@JsonProperty("error_uri")
+	private String errorUri;
 
 
-	@JsonProperty("token_type")
-	private String tokenType;
-
-
-	public void setToken(String token) {
-		this.token = token;
+	public String getError() {
+		return error;
 	}
 
-	public String getScope() {
-		return scope;
+	public void setError(String error) {
+		this.error = error;
 	}
 
-	public void setScope(String scope) {
-		this.scope = scope;
+	public String getErrorDescription() {
+		return errorDescription;
 	}
 
-	public String getTokenType() {
-		return tokenType;
+	public void setErrorDescription(String errorDescription) {
+		this.errorDescription = errorDescription;
 	}
 
-	public void setTokenType(String tokenType) {
-		this.tokenType = tokenType;
+	public String getErrorUri() {
+		return errorUri;
 	}
 
-	@Override
-	public String getToken() {
-		return token;
+	public void setErrorUri(String errorUri) {
+		this.errorUri = errorUri;
 	}
 
-	@Override
-	public String getRefreshToken() {
-		return null;
+
+	public String getRefreshTokenEffectiveTime() {
+		return refreshTokenEffectiveTime;
 	}
 
-	@Override
-	public long getEffectiveTime() {
-		return -1;
+	public void setRefreshTokenEffectiveTime(String refreshTokenEffectiveTime) {
+		this.refreshTokenEffectiveTime = refreshTokenEffectiveTime;
 	}
+
+
 }

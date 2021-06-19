@@ -1,5 +1,7 @@
 package org.codingeasy.oauth.client.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -11,19 +13,30 @@ public class SimpleOAuthToken implements  OAuthToken{
 
 	private Map<String , Object> attach = new HashMap<>();
 
+	@JsonProperty("access_token")
 	private String token;
 
+	@JsonProperty("token_type")
+	private String tokenType;
 
+	private String scope;
+
+	@JsonProperty("expires_in")
+	private Long effectiveTime;
+
+
+	@JsonProperty("refresh_token")
 	private String refreshToken;
-
-
-	private long effectiveTime;
 
 
 	public SimpleOAuthToken(String token , String refreshToken , long effectiveTime){
 		this.token = token;
 		this.refreshToken = refreshToken;
 		this.effectiveTime =effectiveTime;
+	}
+
+
+	public SimpleOAuthToken() {
 	}
 
 	/**
@@ -46,7 +59,42 @@ public class SimpleOAuthToken implements  OAuthToken{
 	}
 
 
+	public String getTokenType() {
+		return tokenType;
+	}
 
+	public void setTokenType(String tokenType) {
+		this.tokenType = tokenType;
+	}
+
+
+	public Map<String, Object> getAttach() {
+		return attach;
+	}
+
+	public void setAttach(Map<String, Object> attach) {
+		this.attach = attach;
+	}
+
+	public void setToken(String token) {
+		this.token = token;
+	}
+
+	public String getScope() {
+		return scope;
+	}
+
+	public void setScope(String scope) {
+		this.scope = scope;
+	}
+
+	public void setEffectiveTime(Long effectiveTime) {
+		this.effectiveTime = effectiveTime;
+	}
+
+	public void setRefreshToken(String refreshToken) {
+		this.refreshToken = refreshToken;
+	}
 
 	@Override
 	public String getToken() {

@@ -55,7 +55,10 @@ public class FacebookOAuthClientHandler implements OAuthClientHandler {
 		}catch (Exception e){
 			throw new AccessTokenException(text , e);
 		}
-		if (facebookOAuthToken == null || StringUtils.isEmpty(facebookOAuthToken.getToken())){
+		if (facebookOAuthToken == null){
+			throw new AccessTokenException(String.format("无法获取第三方%s token" , NAME));
+		}
+		if (StringUtils.isEmpty(facebookOAuthToken.getToken())){
 			throw new AccessTokenException(text);
 		}
 		return facebookOAuthToken;
